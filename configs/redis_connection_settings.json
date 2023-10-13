@@ -1,0 +1,9 @@
+{
+    "host": "192.168.4.200",
+    "db": 4,
+    "password": null,
+    "port": 6379,
+    "socket_timeout": null,
+    "decode_responses": true,
+    "socket_connect_timeout": 3
+}

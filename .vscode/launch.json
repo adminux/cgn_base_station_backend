@@ -8,7 +8,7 @@
             "mode": "debug",
             // "host": "127.0.0.1",
             // "port": 44444,
-            "program": "${workspaceRoot}",
+            "program": "${workspaceRoot}/cmd/cgn_base_station_backend/main.go",
             "env": {},
             "args": [],
             "showLog": true
