@@ -15,6 +15,9 @@ var redis_db_connection *redis.Client = Redis_db_connection()
 func Get(key_name string) string {
 	val, err := redis_db_connection.Get(ctx, key_name).Result()
 	if err != nil {
+		if err == redis.Nil {
+			log.Fatal("Key ", key_name, " not found!")
+		}
 		log.Fatal(err)
 	}
 	return val
